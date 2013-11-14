@@ -14,5 +14,11 @@ void main() {
     else{
         writeln("erm...");
     }
+
+    immutable a = add(2,6);
+    static assert(a==8);
+
+    const b = add(5,6);
+    static assert(b==11);
 }
 
