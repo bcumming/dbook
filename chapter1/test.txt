@@ -1,0 +1,12 @@
+all we have to do is fill info appropriately from hamlet this needs some
+work because a character paragraph may extend for several lines so we need to do some simple parsing to coalesce physical lines into paragraphs
+to figuore out how to do that lets take a look at a short fragment from hamlet dumped verbatim
+below with leading spaces made visible for clarity
+
+            
+
+whether or not enthusiasm about goto was a factor in his demise is even to this day a matter of speculation reguardless of this lets note how each
+and then we had that many              
+    had that many
+
+        

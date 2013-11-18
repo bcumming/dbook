@@ -19,5 +19,12 @@ void main()
     // print counts
     foreach(word; words)
         writefln("%6d\t%s", freqs[word], word);
+
+    // determine the total number of words in a post-hoc fashion
+    int sum = 0;
+    foreach(word; words)
+        sum += freqs[word];
+
+    writefln("total of %d words\n", sum);
 }
 
