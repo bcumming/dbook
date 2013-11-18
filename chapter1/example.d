@@ -7,7 +7,7 @@ interface Interface {
 
 class Abstract : Interface {
     abstract void message();
-    string meaning() {return "";};
+    string meaning() {return "God is dead";};
 }
 
 class adams : Abstract {
@@ -17,15 +17,16 @@ class adams : Abstract {
     override string meaning() {return "42";};
 }
 
-class nitchse : Abstract {
+class nietzsche : Abstract {
     // we don't use the override keyword here
+    // this gives a compiler warning...
     void message() {
-        writeln("According to nitchse");
+        writeln("According to Nietzsche");
     }
 }
 
 void main() {
-    nitchse n = new nitchse;
+    nietzsche n = new nietzsche;
     adams a = new adams;
 
     a.message();
